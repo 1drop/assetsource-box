@@ -1,0 +1,59 @@
+Onedrop\AssetSource\Box\Api\BoxClient:
+  properties:
+    accessTokenCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_Token
+    authTokenCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_AuthToken
+Onedrop\AssetSource\Box\Controller\AuthenticateController:
+  properties:
+    accessTokenCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_Token
+    authTokenCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_AuthToken
+Onedrop\AssetSource\Box\AssetSource\BoxAssetProxyRepository:
+  properties:
+    assetProxyCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_FileInfo
+Onedrop\AssetSource\Box\AssetSource\BoxAssetProxy:
+  properties:
+    fileContentCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_File
+Onedrop\AssetSource\Box\Api\FileIndex:
+  properties:
+    cache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Onedrop_AssetSourceBox_FileIndex

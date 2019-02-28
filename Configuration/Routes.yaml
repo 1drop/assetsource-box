@@ -1,0 +1,9 @@
+-
+  name: 'Box.com OAuth2'
+  uriPattern: 'neos/assetsource/box/authenticate(/{@action})'
+  defaults:
+    '@package': 'Onedrop.AssetSource.Box'
+    '@controller': 'Authenticate'
+    '@format': 'html'
+    '@action': 'requestToken'
+  appendExceedingArguments: true

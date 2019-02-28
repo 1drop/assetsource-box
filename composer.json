@@ -1,0 +1,28 @@
+{
+    "name": "onedrop/assetsource-box",
+    "license": "MIT",
+    "description": "Neos asset source box.com",
+    "authors": [
+        {
+            "name": "Hans Hoechtl",
+            "email": "hhoechtl@1drop.de"
+        }
+    ],
+    "type": "neos-package",
+    "extra": {
+        "neos": {
+            "package-key": "Onedrop.AssetSource.Box"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Onedrop\\AssetSource\\Box\\": "Classes/"
+        }
+    },
+    "require": {
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "neos/neos": "^4.0",
+        "firebase/php-jwt": "^5.0"
+    }
+}

@@ -1,0 +1,11 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Onedrop.AssetSource.Box:Authenticate':
+      matcher: 'method(Onedrop\AssetSource\Box\Controller\AuthenticateController->.*Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Onedrop.AssetSource.Box:Authenticate'
+        permission: GRANT
